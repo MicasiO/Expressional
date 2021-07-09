@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Expressional</title>
+
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+
+    <script src="render.js"></script>
+  </head>
+  <body>
+    <header id="titlebar">
+      <div id="drag-region">
+        <div id="window-title">
+          <span>Expressional</span>
+        </div>
+        <div id="window-controls">
+          <div class="button" id="min-button">
+            <img
+              class="icon"
+              srcset="
+                icons/min-w-10.png 1x,
+                icons/min-w-12.png 1.25x,
+                icons/min-w-15.png 1.5x,
+                icons/min-w-15.png 1.75x,
+                icons/min-w-20.png 2x,
+                icons/min-w-20.png 2.25x,
+                icons/min-w-24.png 2.5x,
+                icons/min-w-30.png 3x,
+                icons/min-w-30.png 3.5x
+              "
+              draggable="false"
+            />
+          </div>
+
+          <div class="button" id="max-button">
+            <img
+              class="icon"
+              srcset="
+                icons/max-w-10.png 1x,
+                icons/max-w-12.png 1.25x,
+                icons/max-w-15.png 1.5x,
+                icons/max-w-15.png 1.75x,
+                icons/max-w-20.png 2x,
+                icons/max-w-20.png 2.25x,
+                icons/max-w-24.png 2.5x,
+                icons/max-w-30.png 3x,
+                icons/max-w-30.png 3.5x
+              "
+              draggable="false"
+            />
+          </div>
+
+          <div class="button" id="restore-button">
+            <img
+              class="icon"
+              srcset="
+                icons/restore-w-10.png 1x,
+                icons/restore-w-12.png 1.25x,
+                icons/restore-w-15.png 1.5x,
+                icons/restore-w-15.png 1.75x,
+                icons/restore-w-20.png 2x,
+                icons/restore-w-20.png 2.25x,
+                icons/restore-w-24.png 2.5x,
+                icons/restore-w-30.png 3x,
+                icons/restore-w-30.png 3.5x
+              "
+              draggable="false"
+            />
+          </div>
+
+          <div class="button" id="close-button">
+            <img
+              class="icon"
+              srcset="
+                icons/close-w-10.png 1x,
+                icons/close-w-12.png 1.25x,
+                icons/close-w-15.png 1.5x,
+                icons/close-w-15.png 1.75x,
+                icons/close-w-20.png 2x,
+                icons/close-w-20.png 2.25x,
+                icons/close-w-24.png 2.5x,
+                icons/close-w-30.png 3x,
+                icons/close-w-30.png 3.5x
+              "
+              draggable="false"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="main">
+      <div id="offline-modal"><h3>Internet connection lost</h3></div>
+      <h1>Expressional</h1>
+
+      <div id="main-app">
+        <div id="add-section">
+          <div id="add-button"><i class="bi bi-plus-lg"></i></div>
+
+          <div id="add-modal">
+            <h3>Add new expression</h3>
+            <input
+              type="text"
+              placeholder="Image address"
+              id="image-address-url"
+            />
+            <div id="button-section">
+              <button id="save-button">Save</button>
+              <button id="cancel-button">Cancel</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="emoji-grid"></div>
+      </div>
+    </div>
+  </body>
+</html>

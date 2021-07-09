@@ -1,0 +1,81 @@
+{
+  "name": "expressional",
+  "productName": "Expressional",
+  "version": "1.0.0",
+  "description": "A image/GIF library for messaging platforms.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\"",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "expressional",
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "src/expressional_icon.ico"
+    },
+    "nsis": {
+      "installerIcon": "src/expressional_icon.ico",
+      "uninstallerIcon": "src/expressional_icon.ico",
+      "uninstallDisplayName": "Expressional",
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "keywords": [],
+  "author": {
+    "name": "MicasiO",
+    "email": "mikas1235@gmail.com"
+  },
+  "license": "MIT",
+  "config": {
+    "forge": {
+      "packagerConfig": {},
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "expressional"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ]
+    }
+  },
+  "dependencies": {
+    "custom-electron-titlebar": "^3.2.7",
+    "electron-squirrel-startup": "^1.0.0",
+    "node-notifier": "^10.0.0",
+    "ps-list": "^7.2.0",
+    "toastify-js": "^1.11.0"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.57",
+    "@electron-forge/maker-deb": "^6.0.0-beta.57",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.57",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.57",
+    "@electron-forge/maker-zip": "^6.0.0-beta.57",
+    "electron": "13.1.3",
+    "electron-builder": "^22.11.7",
+    "electron-reloader": "^1.2.1"
+  }
+}
