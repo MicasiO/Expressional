@@ -1,0 +1,10 @@
+.root {
+  position: relative;
+  border: 5px rgb(139, 139, 139) solid;
+  border-radius: 24px;
+  width: 90%;
+  margin: 0 auto;
+  height: fit-content;
+  min-height: 20rem;
+  padding: 12px;
+}

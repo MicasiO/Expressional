@@ -1,0 +1,13 @@
+.appRoot {
+  padding-top: 32px;
+}
+
+.title {
+  position: relative;
+  text-align: center;
+  margin: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}

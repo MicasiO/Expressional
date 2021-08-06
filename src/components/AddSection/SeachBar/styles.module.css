@@ -1,0 +1,33 @@
+.root {
+  width: 100%;
+  position: relative;
+  margin-top: 24px;
+}
+
+.root input {
+  width: 100%;
+  background: none;
+  font-size: 24px;
+  border-radius: 8px;
+  border: rgba(117, 117, 117, 0.473) solid 3px;
+  outline: none;
+  padding: 6px;
+  color: rgb(209, 209, 209);
+}
+.root input::placeholder {
+  color: rgba(165, 165, 165, 0.726);
+}
+.root button {
+  position: absolute;
+  right: 16px;
+  font-size: 24px;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  outline: none;
+  border: none;
+}
+.root button i {
+  color: rgba(165, 165, 165, 0.726);
+}

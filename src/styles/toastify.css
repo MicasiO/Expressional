@@ -1,0 +1,14 @@
+.Toastify__toast-container {
+  text-align: center;
+  font-size: 16px;
+}
+
+.Toastify__toast--error {
+  background: linear-gradient(
+    to top right,
+    rgb(155, 35, 35),
+    rgb(179, 62, 62)
+  ) !important;
+  box-shadow: 0px 4px 11px 3px #9b2f2f4d !important;
+  padding: 0 16px !important;
+}

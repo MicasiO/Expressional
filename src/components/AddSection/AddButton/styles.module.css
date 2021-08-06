@@ -1,0 +1,74 @@
+.root {
+  background: linear-gradient(to right, #997ee2, #895eff);
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  width: 100%;
+  font-size: 28px;
+  padding: 1rem 2rem;
+  box-shadow: 0px 4px 11px 3px #997ee24d;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.root:hover {
+  top: -35px;
+  box-shadow: 0px 7px 11px 3px #997ee24d;
+}
+
+.select {
+  position: relative;
+  font-size: 16px;
+  color: black;
+  padding: 4px 10px 4px 0px;
+}
+
+.select option {
+  color: black;
+}
+
+.textInput {
+  font-size: 20px;
+  padding: 0.5rem;
+  color: black;
+  outline: none;
+  resize: none;
+  opacity: 0.6;
+  transition: all 0.3s;
+  height: 120px;
+  border-radius: 8px;
+}
+.textInput:focus {
+  box-shadow: 0px 4px 11px 3px #0000004d;
+  opacity: 1;
+}
+
+.addressInput {
+  font-size: 20px;
+  padding: 0.5rem;
+  color: black;
+  outline: none;
+  resize: none;
+  opacity: 0.6;
+  transition: all 0.3s;
+  border-radius: 8px;
+}
+.addressInput:focus {
+  box-shadow: 0px 4px 11px 3px #0000004d;
+  opacity: 1;
+}
+
+.titleInput {
+  font-size: 16px;
+  padding: 0.4rem 0.3rem;
+  color: black;
+  outline: none;
+  resize: none;
+  opacity: 0.6;
+  transition: all 0.3s;
+  border-radius: 8px;
+}
+.titleInput:focus {
+  box-shadow: 0px 4px 11px 3px #0000004d;
+  opacity: 1;
+}
